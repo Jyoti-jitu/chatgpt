@@ -12,7 +12,7 @@ import {
   DropdownMenuGroup,
 } from '@/components/ui/dropdown-menu';
 import { useTheme } from 'next-themes';
-import { Command, LogOut, Settings, Sun, Moon } from 'lucide-react';
+import { Command, LogOut, Settings, Sun, Moon, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export function Header() {
@@ -54,6 +54,12 @@ export function Header() {
               <Sun className="mr-2 h-4 w-4 hidden dark:block" />
               <Moon className="mr-2 h-4 w-4 block dark:hidden" />
               <span>Toggle Theme</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer rounded-lg hover:bg-white/5" asChild>
+              <Link href="/pricing" className="flex items-center w-full">
+                <Sparkles className="mr-2 h-4 w-4 text-primary" />
+                <span>Upgrade to Pro</span>
+              </Link>
             </DropdownMenuItem>
             <DropdownMenuItem className="cursor-pointer rounded-lg hover:bg-white/5">
               <Settings className="mr-2 h-4 w-4 text-muted-foreground" />

@@ -19,15 +19,15 @@ export default function LandingPage() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-zinc-300">
-          <a href="#features" className="hover:text-white transition">
+          <Link href="/#features" className="hover:text-white transition">
             Features
-          </a>
-          <a href="#about" className="hover:text-white transition">
+          </Link>
+          <Link href="/#about" className="hover:text-white transition">
             About
-          </a>
-          <a href="#pricing" className="hover:text-white transition">
+          </Link>
+          <Link href="/pricing" className="hover:text-white transition">
             Pricing
-          </a>
+          </Link>
         </nav>
 
         <Link href="/register">
